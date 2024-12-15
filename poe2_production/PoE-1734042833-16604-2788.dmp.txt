@@ -1,0 +1,12 @@
+User
+
+Area
+HideoutFelled
+Seed
+1
+Build
+poe2_production tags/4.1.0d 261417
+OSBits
+64
+CPUBrand
+AMD Ryzen 7 7800X3D 8-Core Processor           
