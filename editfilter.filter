@@ -21,10 +21,18 @@ BaseType "Uncut "
 SetTextColor 20 240 240
 SetBorderColor 20 240 240
 PlayAlertSound 2 300
-PlayEffect Cyan
-MinimapIcon 1 Cyan Triangle
- 
- 
+PlayEffect Green
+MinimapIcon 1 Green Triangle
+
+Show
+BaseType "Spirit "
+DropLevel = 14
+SetTextColor 10 120 120
+SetBorderColor 10 120 120
+PlayAlertSound 2 300
+PlayEffect Red
+MinimapIcon 1 Red Triangle 
+
 #uniques
 Show
 	Rarity Unique

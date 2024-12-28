@@ -147,15 +147,15 @@ Show
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
 	SetBackgroundColor 47 0 74 255
-	PlayEffect Purple
-	MinimapIcon 1 Purple Diamond
+	PlayEffect Red
+	MinimapIcon 1 Red Diamond
 
 #------------------------------------
 # Gloves
 #------------------------------------
 
 Show 
-	Rarity Magic Rare
+	Rarity Normal Magic Rare
 	Class == "Gloves"
     BaseType == "Expert Moulded Mitts" "Expert Spined Bracers" "Expert Intricate Gloves" "Expert Doubled Gauntlets" "Expert Goldcast Cuffs" "Expert Spiral Wraps"
 	SetFontSize 30
@@ -225,12 +225,23 @@ Show
 	PlayEffect Purple
 	MinimapIcon 1 Purple Diamond
 
+Show 
+  Rarity Normal
+	Class == "Rings"
+	BaseType == "Amethyst Ring"
+	SetFontSize 30
+	SetTextColor 0 240 190 255
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 47 0 74 255
+	PlayEffect Purple
+	MinimapIcon 1 Purple Diamond
+
 #------------------------------------
 # Quivers
 #------------------------------------
 
 Show 
-	Rarity Magic Rare
+	Rarity Normal Magic Rare
 	Class == "Quivers"
 	BaseType == "Visceral Quiver" "Primed Quiver"
 	SetFontSize 30
@@ -245,7 +256,7 @@ Show
 #------------------------------------
 
 Show 
-	Rarity Magic Rare
+	Rarity Normal Magic Rare
 	Class == "Body Armours"
     BaseType == "Expert Hexer's Robe" "Expert Waxed Jacket" "Expert Rogue Armour" "Expert Studded Vest"
 	SetFontSize 45
@@ -270,12 +281,34 @@ Show
 	PlayEffect Purple
 	MinimapIcon 1 Purple Diamond
 
+Show 
+	Rarity Normal Rare
+	Class == "Belts"
+    BaseType == "Heavy Belt"
+	SetFontSize 45
+	SetTextColor 0 240 190 255
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 47 0 74 255
+	PlayEffect Purple
+	MinimapIcon 1 Green Diamond
+
+Show
+Class "Amulets"
+	BaseType == "Azure Amulet"
+Rarity Normal
+SetFontSize 40
+SetTextColor 233 206 75
+SetBorderColor 233 206 75
+PlayEffect Yellow
+MinimapIcon 1 Yellow Diamond
+
+
 #------------------------------------
 #  Jewels
 #------------------------------------
 
 Show
-	Rarity Magic Rare
+	Rarity Normal Magic Rare
 	BaseType == "Emerald" "Diamond" "Ruby" "Sapphire" "Time-Lost Emerald" "Time-Lost Diamond" "Time-Lost Ruby" "Time-Lost Sapphire" "Timeless Jewel"
     SetFontSize 35
 	SetTextColor 0 240 190 255
@@ -388,11 +421,33 @@ Hide
 
 Show
 BaseType "Uncut"
+#    ItemLevel >= 18
+#    ItemLevel <= 19
 SetTextColor 20 240 240
 SetBorderColor 20 240 240
-PlayAlertSound 2 300
-PlayEffect Cyan
-MinimapIcon 1 Cyan Triangle
+PlayAlertSound 3 100
+PlayEffect Red
+MinimapIcon 1 Red Triangle
+
+#Show
+#BaseType "Uncut Spirit "
+#DropLevel <= 72
+#SetTextColor 10 120 120
+#SetBorderColor 10 120 120
+#PlayAlertSound 2 300
+#PlayEffect Green
+#MinimapIcon 1 Green Triangle 
+
+Show
+BaseType "Uncut"
+ItemLevel >= 19
+    SetFontSize 45
+    SetTextColor 255 0 0 255
+    SetBorderColor 255 0 0 255
+    SetBackgroundColor 255 255 255 255
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+    PlayAlertSound 6 300
 
 #--------------------------
 # Overrides - Uniques, Valuables
