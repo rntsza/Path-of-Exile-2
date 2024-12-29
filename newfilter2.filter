@@ -1,12 +1,3 @@
-
-#===============================================================================================================
-#  SigmAFK
-#===============================================================================================================
-
-# YouTube - https://www.youtube.com/watch?v=9x49PT8R1QI
-# Twitch - https://www.twitch.tv/sigmafk
-# Discord - https://discord.gg/hTrShm2SYc
-
 #===============================================================================================================
 # Gold
 #===============================================================================================================
@@ -83,8 +74,9 @@ PlayAlertSound 1 300
 
 Show 
 	Rarity Magic Rare
-	Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "Two Hand Axes" "Two Hand Maces" "Wands" "Quarterstaves" "Crossbows" "Spears" "Flails"
-	BaseType == "Expert Dualstring Bow" "Hallowed Sceptre" "Attuned Wand" "Siphoning Wand" "Chiming Staff" "Expert Crackling Quarterstaff" "Expert Slicing Quarterstaff" "Expert Bombard Crossbow" "Rattling Sceptre"
+#Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "Two Hand Axes" "Two Hand Maces" "Wands" "Quarterstaves" "Crossbows" "Spears" "Flails"
+	Class == "Bows" "Claws" "Daggers" "Wands" "Quarterstaves" "Crossbows" "Flails"
+	BaseType == "Expert Dualstring Bow" "Hallowed Sceptre" "Attuned Wand" "Siphoning Wand" "Withered Wand" "Bone Wand" "Volatile Wand" "Chiming Staff" "Expert Crackling Quarterstaff" "Expert Slicing Quarterstaff" "Expert Bombard Crossbow" "Rattling Sceptre"
 	SetFontSize 30
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -99,7 +91,8 @@ Show
 Show 
 	Rarity Magic Rare
 	Class == "Helmets"
-    BaseType == "Expert Elite Greathelm" "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Shielded Helm" "Expert Heavy Crown" "Expert Tribal Mask"
+    #BaseType == "Expert Elite Greathelm" "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Shielded Helm" "Expert Heavy Crown" "Expert Tribal Mask"
+		BaseType == "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Tribal Mask"
 	SetFontSize 30
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -107,6 +100,16 @@ Show
 	PlayEffect Purple
 	MinimapIcon 1 Purple Diamond
 
+Hide
+	Rarity Magic Rare
+	Class == "Helmets"
+		BaseType == "Advanced Guarded Helm"
+	SetFontSize 30
+	SetTextColor 0 240 190 255
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 47 0 74 255
+	#PlayEffect Purple
+	#MinimapIcon 1 Purple Diamond
 
 #------------------------------------
 # Boots
@@ -115,7 +118,8 @@ Show
 Show 
 	Rarity Magic Rare
 	Class == "Boots"
-    BaseType == "Expert Stone Greaves" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Stacked Sabatons" "Expert Pelt Leggings" "Expert Hunting Shoes"
+    #BaseType == "Expert Stone Greaves" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Stacked Sabatons" "Expert Pelt Leggings" "Expert Hunting Shoes"
+		BaseType == "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Pelt Leggings" "Expert Hunting Shoes"
 	SetFontSize 30
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -140,15 +144,26 @@ Show
 	MinimapIcon 1 Purple Diamond
 
 Show 
-	Rarity  Normal Magic Rare
+	Rarity  Rare
 	Class == "Body Armours"
-    BaseType == "Expert Shaman Mantle" "Expert Sacrificial Mantle" "Expert Wayfarer Jacket" "Expert Scalper's Jacket" "Expert Rogue Armour" 
+    BaseType == "Expert Shaman Mantle" "Expert Wayfarer Jacket" "Expert Scalper's Jacket" "Expert Rogue Armour" 
 	SetFontSize 30
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
 	SetBackgroundColor 47 0 74 255
 	PlayEffect Red
 	MinimapIcon 1 Red Diamond
+
+Hide 
+	Rarity  Normal Magic Rare
+	Class == "Body Armours"
+    #BaseType == "Advanced Scale Mail" 
+	SetFontSize 30
+	SetTextColor 0 240 190 255
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 47 0 74 255
+	#PlayEffect Red
+	#MinimapIcon 1 Red Diamond
 
 #------------------------------------
 # Gloves
@@ -169,7 +184,7 @@ Show
 # Shields
 #------------------------------------ 		
 
-Show 
+Hide 
     Rarity Magic Rare
 	Class == "Shields"
     BaseType == "Expert Stone Tower Shield" "Expert Feathered Targe" "Expert Omen Crest Shield" "Expert Edged Buckler"
@@ -177,8 +192,8 @@ Show
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
 	SetBackgroundColor 47 0 74 255
-	PlayEffect Purple
-	MinimapIcon 1 Purple Diamond
+	#PlayEffect Purple
+	#MinimapIcon 1 Purple Diamond
 
 #------------------------------------
 # Focus
@@ -293,8 +308,8 @@ Show
 	MinimapIcon 1 Green Diamond
 
 Show
-Class "Amulets"
-	BaseType == "Azure Amulet"
+Class "Amulets" "Rings"
+	BaseType == "Azure Amulet" "Stellar Amulet" "Sapphire Ring"
 Rarity Normal
 SetFontSize 40
 SetTextColor 233 206 75
@@ -363,8 +378,18 @@ Hide
 	AreaLevel >= 65
 	SetFontSize 18
 	SetBorderColor 0 0 0 0
-	SetBackgroundColor 20 20 0 0
+	SetBackgroundColor 0 0 0 0
 	DisableDropSound True
+
+Hide
+	Rarity Rare
+	Class == "One Hand Axes" "One Hand Maces" "One Hand Swords" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords"
+	AreaLevel >= 65
+	SetFontSize 18
+	SetBorderColor 0 0 0 0
+	SetBackgroundColor 0 0 0 0
+	DisableDropSound True
+
 Show 
 	Rarity Normal Magic Rare
 	Class == "Relics"
@@ -522,7 +547,7 @@ PlayAlertSound 3 300
 
 Show 
 	Class == "Stackable Currency"
-	BaseType ==  "Exalted Orb" "Divine Orb" "Mirror of Kalandra" "Perfect Jeweller's Orb" "Albino Rhoa Feather" "Gemcutter's Prism" "Mirror Shard"
+	BaseType == "Divine Orb" "Mirror of Kalandra" "Perfect Jeweller's Orb" "Albino Rhoa Feather" "Mirror Shard"
 	SetFontSize 45
 	SetTextColor 255 0 0 255
 	SetBorderColor 255 0 0 255
@@ -533,7 +558,7 @@ PlayAlertSound 6 300
 
 Show 
 	Class == "Stackable Currency"
-	BaseType == "Orb of Alchemy" "Regal Orb" "Orb of Annulment" "Gold Key" "Chaos Orb" "Greater Jeweller's Orb" "Vaal Orb" "Glassblower's Bauble" "Orb of Chance" "Exalted Shard"
+	BaseType == "Orb of Alchemy" "Regal Orb" "Orb of Annulment" "Gold Key" "Chaos Orb" "Greater Jeweller's Orb" "Vaal Orb" "Glassblower's Bauble" "Orb of Chance" "Exalted Shard" "Exalted Orb" "Gemcutter's Prism"
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
