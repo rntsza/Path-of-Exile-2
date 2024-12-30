@@ -7,36 +7,36 @@ Show
 	Class == "Bows" "Wands" "Quarterstaves" "Crossbows" "Quivers"
 	BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Prismatic Ring" "Expert Slicing Quarterstaff" "Expert Crescent Quarterstaff" "Expert Gothic Quarterstaff" "Rattling Sceptre" "Primed Quiver"
 	AreaLevel >= 78
-	SetTextColor 46 159 246 185
-	SetBorderColor 46 159 246 255
-	SetBackgroundColor 20 20 0 185
-	PlayEffect White
-	MinimapIcon 1 Red Square
-	SetFontSize 40
+    SetTextColor 46 159 246 185
+    SetBorderColor 46 159 246 255
+    SetBackgroundColor 20 20 0 185
+    PlayEffect White
+    MinimapIcon 2 Blue Star
+    SetFontSize 40
 	
 Show 
 	Rarity Normal
 	Class == "Rings" "Belts" "Amulets"
 	BaseType == "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Pearl Ring" "Emerald ring" "Stellar Amulet" "Prismatic Ring" "Breach Ring" "Heavy Belt" "Utility Belt"
 	AreaLevel >= 78
-	SetTextColor 46 159 246 185
-	SetBorderColor 46 159 246 255
-	SetBackgroundColor 20 20 0 185
-	PlayEffect White
-	MinimapIcon 1 Red Square
-	SetFontSize 40
+    SetTextColor 46 159 246 185
+    SetBorderColor 46 159 246 255
+    SetBackgroundColor 20 20 0 185
+    PlayEffect White
+    MinimapIcon 2 Blue Star
+    SetFontSize 40
 	
 Show 
 	Rarity Normal
 	Class == "Amulets"
 	BaseType == "Stellar Amulet"
 	AreaLevel >= 78
-	SetTextColor 46 159 246 185
-	SetBorderColor 46 159 246 255
-	SetBackgroundColor 20 20 0 185
-	PlayEffect White
-	MinimapIcon 1 Red Square
-	SetFontSize 40
+    SetTextColor 46 159 246 185
+    SetBorderColor 46 159 246 255
+    SetBackgroundColor 20 20 0 185
+    PlayEffect White
+    MinimapIcon 2 Blue Star
+    SetFontSize 40
 
 #===============================================================================================================
 # Gold
@@ -155,20 +155,6 @@ Show
 	SetBackgroundColor 47 0 74 255
 	PlayEffect Purple
 	MinimapIcon 1 Purple Diamond
-
-
-#------------------------------------
-# Custom Rules Minion
-#------------------------------------
-
-Hide 
-	Rarity  Normal Magic Rare
-	Class == "Sceptres"
-    BaseType == "Rattling Sceptre"
-	SetFontSize 30
-	SetTextColor 0 240 190 255
-	SetBorderColor 0 240 190 255
-	SetBackgroundColor 47 0 74 255
 
 #------------------------------------
 # Gloves
@@ -373,18 +359,7 @@ Show
     MinimapIcon 2 Cyan Triangle
     PlayEffect Cyan
 	MinimapIcon 1 Blue Diamond
-#===============================================================================================================
-# Hide - Normal and Magic
-#===============================================================================================================
-
-Hide
-	Rarity Normal Magic Rare
-	Class == "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Crossbows"
-	AreaLevel >= 65
-	SetFontSize 18
-	SetBorderColor 0 0 0 0
-	SetBackgroundColor 20 20 0 0
-	DisableDropSound True
+	
 Show 
 	Rarity Normal Magic Rare
 	Class == "Relics"
@@ -392,7 +367,7 @@ Show
 	SetBorderColor 0 240 190 255
 	PlayEffect Blue
 	MinimapIcon 2 Blue Diamond
-PlayAlertSound 3 300
+	PlayAlertSound 3 300
 
 #===============================================================================================================
 # Flasks & Charms 
@@ -422,18 +397,6 @@ Hide
 	SetBorderColor 0 0 0 0
 	SetBackgroundColor 20 20 0 0
 	DisableDropSound True
-#===============================================================================================================
-# Hide - Normal, Magic and Rare Endgame Gear
-#===============================================================================================================
-
-Hide 
-	Rarity Normal Magic Rare
-	Class == "Amulets" "Ring" "Belts" "Body Armours" "Boots" "Gloves" "Helmets" "Bows" "Staves" "Quarterstaves" "Crossbows" "Traps" "Crossbows" "Claws" "Daggers" "Wands" "Sceptres" "Spears" "Flails" "Foci"
-	AreaLevel >= 65
-	SetFontSize 18
-	SetBorderColor 0 0 0 0
-	SetBackgroundColor 20 20 0 0
-	DisableDropSound True
 
 #--------------------------
 # Uncut Gems
@@ -441,24 +404,16 @@ Hide
 
 Hide
         BaseType "Uncut"
-        ItemLevel < 19
+        ItemLevel <= 19
         SetTextColor 20 240 240
         SetBorderColor 20 240 240
         PlayAlertSound 3 0
         PlayEffect Red
 		DisableDropSound True
-
-Hide
-        BaseType "Uncut Spirit "
-        DropLevel <= 72
-        SetTextColor 10 120 120
-        SetBorderColor 10 120 120
-        PlayAlertSound 2 0
-		DisableDropSound True
-
+		
 Show
-BaseType "Uncut"
-        ItemLevel >= 19
+		BaseType "Uncut"
+        ItemLevel >= 20
         SetFontSize 45
         SetTextColor 255 0 0 255
         SetBorderColor 255 0 0 255
@@ -489,19 +444,7 @@ Show
 
 Show
         BaseType "Waystone"
-		WaystoneTier >= 14
-        Rarity <= Rare
-		SetFontSize 40
-		SetTextColor 0 0 0 255
-		SetBackgroundColor 200 200 200 255
-		PlayEffect Yellow
-		MinimapIcon 1 Red Square
-        PlayAlertSound 5 300
-
-Show
-        BaseType "Waystone"
-		WaystoneTier >= 12
-		WaystoneTier <= 13
+		WaystoneTier >= 13
         Rarity <= Rare
 		SetFontSize 40
 		SetTextColor 0 0 0 255
@@ -513,7 +456,7 @@ Show
 Hide
         BaseType "Waystone"
 		WaystoneTier >= 1
-		WaystoneTier <= 11
+		WaystoneTier <= 12
         Rarity <= Rare
         SetTextColor 255 255 255 255
         SetBackgroundColor 20 20 0 255
@@ -681,9 +624,9 @@ Show
 	PlayAlertSound 3 300
 
 Show 
-	ItemLevel >= 80
-	Rarity Rare Normal Magic
-	Class == "Rings"
+	Rarity Normal Magic Rare
+	Class == "Ring"
+	ItemLevel >= 78
 	BaseType == "Breach Ring"
 	SetFontSize 30
 	SetTextColor 0 240 190 255
@@ -822,3 +765,16 @@ Show
 	PlayEffect White
 	MinimapIcon 1 White Square
 	SetFontSize 40
+	
+#===============================================================================================================
+# Hide - Normal, Magic and Rare Endgame Gear
+#===============================================================================================================
+
+Hide 
+	Rarity Normal Magic Rare
+	Class == "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Quarterstaves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Crossbows"
+	AreaLevel >= 65
+	SetFontSize 18
+	SetBorderColor 0 0 0 0
+	SetBackgroundColor 20 20 0 0
+	DisableDropSound True
