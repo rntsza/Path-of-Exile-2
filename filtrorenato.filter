@@ -488,33 +488,33 @@ Hide
 
 Show
 BaseType "Uncut"
-#    ItemLevel >= 18
-#    ItemLevel <= 19
+  ItemLevel >= 19
+  #ItemLevel <= 19
 SetTextColor 20 240 240
 SetBorderColor 20 240 240
 PlayAlertSound 3 100
 PlayEffect Red
 MinimapIcon 1 Red Triangle
 
-#Show
-#BaseType "Uncut Spirit "
-#DropLevel <= 72
-#SetTextColor 10 120 120
-#SetBorderColor 10 120 120
-#PlayAlertSound 2 300
-#PlayEffect Green
-#MinimapIcon 1 Green Triangle 
+Hide
+BaseType "Uncut"
+  ItemLevel <= 19
+SetTextColor 20 240 240
+SetBorderColor 20 240 240
+#PlayAlertSound 3 100
+#PlayEffect Red
+#MinimapIcon 1 Red Triangle
 
 Show
 BaseType "Uncut"
-ItemLevel >= 19
-    SetFontSize 45
-    SetTextColor 255 0 0 255
-    SetBorderColor 255 0 0 255
-    SetBackgroundColor 255 255 255 255
-    PlayEffect Red
-    MinimapIcon 0 Red Star
-    PlayAlertSound 6 300
+ItemLevel = 20
+  SetFontSize 45
+  SetTextColor 255 0 0 255
+  SetBorderColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  PlayEffect Red
+  MinimapIcon 0 Green Star
+  PlayAlertSound 6 300
 
 #--------------------------
 # Overrides - Uniques, Valuables
