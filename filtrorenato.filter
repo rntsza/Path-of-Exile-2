@@ -12,7 +12,7 @@ Show
 	SetBorderColor 46 159 246 255
 	SetBackgroundColor 20 20 0 185
 	PlayEffect White
-	MinimapIcon 1 Red Square
+	MinimapIcon 2 Blue Star
 	SetFontSize 40
 	
 Show 
@@ -285,7 +285,7 @@ Show
 Show 
   Rarity Normal
 	Class == "Rings"
-	BaseType == "Amethyst Ring"
+	BaseType == "Amethyst Ring" "Gold Ring" "Prismatic Ring" "Breach Ring"
 	SetFontSize 30
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -300,7 +300,7 @@ Show
 Show 
 	Rarity Normal Magic Rare
 	Class == "Quivers"
-	BaseType == "Visceral Quiver" "Primed Quiver"
+	BaseType == "Primed Quiver"
 	SetFontSize 30
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -445,15 +445,15 @@ PlayAlertSound 3 300
 # Flasks & Charms 
 #===============================================================================================================
 
-Show 
+Hide 
 	Rarity Rare Normal Magic
 	Class == "Charms"
 	SetFontSize 30
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
 	SetBackgroundColor 0 75 30 255
-	PlayEffect Blue
-	MinimapIcon 0 Blue Diamond
+	#PlayEffect Blue
+	#MinimapIcon 0 Blue Diamond
 
 Hide 
 	Rarity Normal Magic
@@ -475,11 +475,11 @@ Hide
 
 Hide 
 	Rarity Normal Magic
-	Class == "Amulets" "Ring" "Belts" "Body Armours" "Boots" "Gloves" "Helmets" "Bows" "Staves" "Quarterstaves" "Crossbows" "Traps" "Crossbows" "Claws" "Daggers" "Wands" "Sceptres" "Spears" "Flails" "Foci"
+	Class == "" "Rings" "Belts" "Body Armours" "Boots" "Gloves" "Helmets" "Bows" "Staves" "Quarterstaves" "Crossbows" "Traps" "Crossbows" "Claws" "Daggers" "Wands" "Sceptres" "Spears" "Flails" "Foci"
 	AreaLevel >= 65
 	SetFontSize 18
 	SetBorderColor 0 0 0 0
-	SetBackgroundColor 20 20 0 0
+	SetBackgroundColor Amulets20 20 0 0
 	DisableDropSound True
 
 #--------------------------
@@ -546,7 +546,7 @@ Show
 	MinimapIcon 1 Red Square
 PlayAlertSound 5 300
 
-Show
+Hide
     BaseType "Waystone"
 	WaystoneTier >= 11
 	WaystoneTier <= 13
@@ -554,11 +554,11 @@ Show
 	SetFontSize 40
 	SetTextColor 0 0 0 255
 	SetBackgroundColor 200 200 200 255
-	PlayEffect Yellow
-	MinimapIcon 1 Red Square
-PlayAlertSound 5 300
+	#PlayEffect Yellow
+	#MinimapIcon 1 Red Square
+#PlayAlertSound 5 300
 
-Show
+Hide
     BaseType "Waystone"
 	WaystoneTier >= 6
 	WaystoneTier <= 10
@@ -567,11 +567,11 @@ Show
     SetBackgroundColor 20 20 0 255
     PlayAlertSound 4 300
     SetFontSize 40		
-	PlayEffect Pink
-	MinimapIcon 0 Pink Circle
-PlayAlertSound 3 300
+	#PlayEffect Pink
+	#MinimapIcon 0 Pink Circle
+#PlayAlertSound 3 300
 	
-Show
+Hide
     BaseType "Waystone"
     Rarity <= Rare
 	WaystoneTier >= 1
@@ -579,9 +579,9 @@ Show
 	SetFontSize 40
     SetTextColor 255 255 255 255
     SetBackgroundColor 20 20 0 255
-    PlayEffect White
-    MinimapIcon 1 White Square
-PlayAlertSound 3 300
+    #PlayEffect White
+    #MinimapIcon 1 White Square
+#PlayAlertSound 3 300
 
 #===============================================================================================================
 # Currency 
@@ -600,7 +600,7 @@ PlayAlertSound 6 300
 
 Show 
 	Class == "Stackable Currency"
-	BaseType == "Orb of Alchemy" "Regal Orb" "Orb of Annulment" "Gold Key" "Chaos Orb" "Greater Jeweller's Orb" "Vaal Orb" "Glassblower's Bauble" "Orb of Chance" "Exalted Shard" "Exalted Orb" "Gemcutter's Prism"
+	BaseType == "Orb of Alchemy" "Regal Orb" "Orb of Annulment" "Gold Key" "Chaos Orb" "Greater Jeweller's Orb" "Vaal Orb" "Glassblower's Bauble" "Orb of Chance" "Exalted Shard" "Exalted Orb" "Gemcutter's Prism" "Armourer's Scrap"
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
@@ -743,7 +743,7 @@ Show
 PlayAlertSound 3 300
 
 Show 
-	ItemLevel >= 84
+	ItemLevel >= 75
 	Rarity Rare Normal Magic
 	Class == "Rings"
 	BaseType == "Breach Ring"
@@ -844,7 +844,7 @@ PlayEffect Cyan
 
 # Special B Tier - Any Runes and Charms
 Show 
-BaseType " Rune" " Charm"
+BaseType " Rune" "Golden Charm"
 SetTextColor 0 240 190
 PlayEffect Cyan Temp
 
