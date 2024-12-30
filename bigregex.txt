@@ -1,0 +1,6 @@
+increased rarity of items found
+increased quantity of items found
+increased pack size
+rare monster
+
+"k si".*"ity"|"k si".*"ity"|"Rar".*"Quan"
