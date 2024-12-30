@@ -1,3 +1,45 @@
+#------------------------------------
+# Bases
+# Don't remove the bases from the beginning of the file, only if u don't want bases
+#------------------------------------
+
+Show 
+	Rarity Normal
+	Class == "Bows" "Wands" "Quarterstaves" "Crossbows" "Quivers"
+	BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Prismatic Ring" "Expert Slicing Quarterstaff" "Expert Crescent Quarterstaff" "Expert Gothic Quarterstaff" "Rattling Sceptre" "Primed Quiver"
+	AreaLevel >= 78
+	SetTextColor 46 159 246 185
+	SetBorderColor 46 159 246 255
+	SetBackgroundColor 20 20 0 185
+	PlayEffect White
+	MinimapIcon 1 Red Square
+	SetFontSize 40
+	
+Show 
+	Rarity Normal
+	Class == "Rings" "Belts" "Amulets"
+	BaseType == "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Pearl Ring" "Emerald ring" "Stellar Amulet" "Prismatic Ring" "Breach Ring" "Heavy Belt" "Utility Belt"
+	AreaLevel >= 78
+	SetTextColor 46 159 246 185
+	SetBorderColor 46 159 246 255
+	SetBackgroundColor 20 20 0 185
+	PlayEffect White
+	MinimapIcon 1 Red Square
+	SetFontSize 40
+	
+Show 
+	Rarity Normal
+	Class == "Amulets"
+	BaseType == "Stellar Amulet"
+	AreaLevel >= 78
+	SetTextColor 46 159 246 185
+	SetBorderColor 46 159 246 255
+	SetBackgroundColor 20 20 0 185
+	PlayEffect White
+	MinimapIcon 1 Red Square
+	SetFontSize 40
+
+
 #===============================================================================================================
 # Gold
 #===============================================================================================================
