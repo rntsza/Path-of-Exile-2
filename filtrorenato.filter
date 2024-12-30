@@ -475,7 +475,7 @@ Hide
 
 Hide 
 	Rarity Normal Magic
-	Class == "" "Rings" "Belts" "Body Armours" "Boots" "Gloves" "Helmets" "Bows" "Staves" "Quarterstaves" "Crossbows" "Traps" "Crossbows" "Claws" "Daggers" "Wands" "Sceptres" "Spears" "Flails" "Foci"
+	Class == "Rings" "Belts" "Body Armours" "Boots" "Gloves" "Helmets" "Bows" "Staves" "Quarterstaves" "Crossbows" "Traps" "Crossbows" "Claws" "Daggers" "Wands" "Sceptres" "Spears" "Flails" "Foci"
 	AreaLevel >= 65
 	SetFontSize 18
 	SetBorderColor 0 0 0 0
