@@ -1,11 +1,22 @@
 #------------------------------------
+# Exclude low currency
+#------------------------------------
+Hide 
+	Class == "Stackable Currency"
+	BaseType == "Orb of Augmentation" "Orb of Transmutation"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35 255
+
+#------------------------------------
 # Bases
 #------------------------------------
 
 Show 
 	Rarity Normal
 	Class == "Bows" "Wands" "Quarterstaves" "Crossbows" "Quivers"
-	BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Prismatic Ring" "Expert Slicing Quarterstaff" "Expert Crescent Quarterstaff" "Expert Gothic Quarterstaff" "Rattling Sceptre" "Primed Quiver"
+	BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Primed Quiver"
 	AreaLevel >= 78
     SetTextColor 46 159 246 185
     SetBorderColor 46 159 246 255
@@ -17,7 +28,7 @@ Show
 Show 
 	Rarity Normal
 	Class == "Rings" "Belts" "Amulets"
-	BaseType == "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Pearl Ring" "Emerald ring" "Stellar Amulet" "Prismatic Ring" "Breach Ring" "Heavy Belt" "Utility Belt"
+	BaseType == "Sapphire Ring" "Breach Ring" "Heavy Belt" "Gold Ring"
 	AreaLevel >= 78
     SetTextColor 46 159 246 185
     SetBorderColor 46 159 246 255
@@ -30,6 +41,18 @@ Show
 	Rarity Normal
 	Class == "Amulets"
 	BaseType == "Stellar Amulet"
+	AreaLevel >= 78
+    SetTextColor 46 159 246 185
+    SetBorderColor 46 159 246 255
+    SetBackgroundColor 20 20 0 185
+    PlayEffect White
+    MinimapIcon 2 Blue Star
+    SetFontSize 40
+	
+Show 
+	Rarity Normal
+	Class == "Gloves"
+	BaseType == "Expert Intricate Gloves"
 	AreaLevel >= 78
     SetTextColor 46 159 246 185
     SetBorderColor 46 159 246 255
@@ -132,7 +155,7 @@ Show
 Show 
 	Rarity Magic Rare
 	Class == "Helmets"
-    BaseType == "Expert Elite Greathelm" "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Shielded Helm" "Expert Heavy Crown" "Expert Tribal Mask"
+    BaseType == "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Tribal Mask"
 	SetFontSize 30
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -234,17 +257,6 @@ Show
 	Rarity Magic Rare
 	Class == "Rings"
 	BaseType == "Topaz Ring" "Sapphire Ring" "Ruby Ring" "Prismatic Ring" "Amethyst Ring" "Gold Ring"
-	SetFontSize 30
-	SetTextColor 0 240 190 255
-	SetBorderColor 0 240 190 255
-	SetBackgroundColor 47 0 74 255
-	PlayEffect Purple
-	MinimapIcon 1 Purple Diamond
-
-Show 
-	Rarity Normal
-	Class == "Rings"
-	BaseType == "Amethyst Ring" "Prismatic Ring"
 	SetFontSize 30
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -470,7 +482,7 @@ Hide
 
 Show 
 		Class == "Stackable Currency"
-		BaseType ==  "Exalted Orb" "Divine Orb" "Mirror of Kalandra" "Perfect Jeweller's Orb" "Albino Rhoa Feather" "Gemcutter's Prism" "Mirror Shard" "Chaos Orb" "Greater Jeweller's Orb" "Exalted Shard" "Orb of Chance"
+		BaseType ==  "Divine Orb" "Mirror of Kalandra" "Perfect Jeweller's Orb" "Albino Rhoa Feather"  "Mirror Shard" 
 		SetFontSize 45
 		SetTextColor 255 0 0 255
 		SetBorderColor 255 0 0 255
@@ -481,7 +493,7 @@ Show
 
 Show 
 		Class == "Stackable Currency"
-		BaseType == "Orb of Alchemy" "Regal Orb" "Orb of Annulment" "Gold Key" "Vaal Orb" "Glassblower's Bauble" 
+		BaseType == "Chaos Orb" "Greater Jeweller's Orb" "Exalted Shard" "Gemcutter's Prism" "Orb of Chance" "Exalted Orb" "Orb of Alchemy" "Regal Orb" "Gold Key" "Vaal Orb" "Glassblower's Bauble" 
 		SetFontSize 45
 		SetTextColor 255 255 255 255
 		SetBorderColor 255 255 255 255
@@ -503,7 +515,7 @@ Show
 
 Show 
 		Class == "Stackable Currency"
-		BaseType == "Lesser Jeweller's Orb" "Broken Circle Artifact" "Order Artifact" "Bronze Key" "Exotic Coinage" "Black Scythe Artifact" "Sun Artifact" "Orb of Transmutation" "Orb of Augmentation"
+		BaseType == "Lesser Jeweller's Orb" "Broken Circle Artifact" "Order Artifact" "Bronze Key" "Exotic Coinage" "Black Scythe Artifact" "Sun Artifact"
 		SetFontSize 41
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
@@ -725,7 +737,7 @@ Show
 
 # Special B Tier - Any Runes and Charms
 Show 
-	BaseType " Rune" " Charm"
+	BaseType "Rune" "Charm"
 	SetTextColor 0 240 190
 	PlayEffect Cyan Temp
 
@@ -772,7 +784,7 @@ Show
 
 Hide 
 	Rarity Normal Magic Rare
-	Class == "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Quarterstaves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Crossbows"
+	Class == "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Quarterstaves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Crossbows" "Rings" "Amulets"
 	AreaLevel >= 65
 	SetFontSize 18
 	SetBorderColor 0 0 0 0
