@@ -6,7 +6,8 @@
 Show 
 	Rarity Normal
 	Class == "Bows" "Wands" "Quarterstaves" "Crossbows" "Quivers"
-	BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Prismatic Ring" "Expert Slicing Quarterstaff" "Expert Crescent Quarterstaff" "Expert Gothic Quarterstaff" "Rattling Sceptre" "Primed Quiver"
+	#BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Prismatic Ring" "Expert Slicing Quarterstaff" "Expert Crescent Quarterstaff" "Expert Gothic Quarterstaff" "Rattling Sceptre" "Primed Quiver"
+	BaseType == "Prismatic Ring" "Primed Quiver"
 	AreaLevel >= 78
 	SetTextColor 46 159 246 185
 	SetBorderColor 46 159 246 255
@@ -15,6 +16,18 @@ Show
 	MinimapIcon 2 Blue Star
 	SetFontSize 40
 	
+Show 
+	Rarity Normal
+	Class == "Wands"
+	ItemLevel >= 80
+	BaseType == "Attuned Wand" "Siphoning Wand" "Prismatic Ring"
+	AreaLevel >= 78
+	SetTextColor 46 159 246 185
+	SetBorderColor 46 255 255 255
+	SetBackgroundColor 20 20 0 185
+	PlayEffect White
+	MinimapIcon 2 Blue Star
+	SetFontSize 40
 Show 
 	Rarity Normal
 	Class == "Rings" "Belts" "Amulets"
@@ -116,9 +129,10 @@ PlayAlertSound 1 300
 
 Show 
 	Rarity Magic Rare
-#Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "Two Hand Axes" "Two Hand Maces" "Wands" "Quarterstaves" "Crossbows" "Spears" "Flails"
+  #Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "Two Hand Axes" "Two Hand Maces" "Wands" "Quarterstaves" "Crossbows" "Spears" "Flails"
 	Class == "Bows" "Claws" "Daggers" "Wands" "Quarterstaves" "Crossbows" "Flails"
-	BaseType == "Expert Dualstring Bow" "Hallowed Sceptre" "Attuned Wand" "Siphoning Wand" "Withered Wand" "Bone Wand" "Volatile Wand" "Chiming Staff" "Expert Crackling Quarterstaff" "Expert Slicing Quarterstaff" "Expert Bombard Crossbow" "Rattling Sceptre"
+	#BaseType == "Expert Dualstring Bow" "Hallowed Sceptre" "Attuned Wand" "Siphoning Wand" "Withered Wand" "Bone Wand" "Volatile Wand" "Chiming Staff" "Expert Crackling Quarterstaff" "Expert Slicing Quarterstaff" "Expert Bombard Crossbow" "Rattling Sceptre"
+	BaseType == "Expert Dualstring Bow" "Hallowed Sceptre" "Attuned Wand" "Siphoning Wand" "Chiming Staff" "Rattling Sceptre"
 	SetFontSize 30
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -161,7 +175,7 @@ Show
 	Rarity Magic Rare
 	Class == "Boots"
     #BaseType == "Expert Stone Greaves" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Stacked Sabatons" "Expert Pelt Leggings" "Expert Hunting Shoes"
-	BaseType == "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Pelt Leggings" "Expert Hunting Shoes"
+	BaseType == "Expert Feathered Sandals"
 	SetFontSize 30
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -175,7 +189,7 @@ Show
 #------------------------------------
 
 Show 
-	Rarity  Normal Magic Rare
+	Rarity Rare
 	Class == "Sceptres"
     BaseType == "Rattling Sceptre"
 	SetFontSize 30
@@ -186,9 +200,9 @@ Show
 	MinimapIcon 1 Purple Diamond
 
 Show 
-	Rarity  Rare
+	Rarity Rare
 	Class == "Body Armours"
-    BaseType == "Expert Shaman Mantle" "Expert Wayfarer Jacket" "Expert Scalper's Jacket" "Expert Rogue Armour" 
+    BaseType == "Expert Shaman Mantle" "Expert Wayfarer Jacket" "Expert Scalper's Jacket" "Expert Rogue Armour" "Expert Hexer's Robe" 
 	SetFontSize 30
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -214,7 +228,7 @@ Hide
 Show 
 	Rarity Normal Magic Rare
 	Class == "Gloves"
-    BaseType == "Expert Moulded Mitts" "Expert Spined Bracers" "Expert Intricate Gloves" "Expert Doubled Gauntlets" "Expert Goldcast Cuffs" "Expert Spiral Wraps"
+    BaseType == "Expert Spined Bracers" "Expert Intricate Gloves" "Expert Spiral Wraps"
 	SetFontSize 30
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -437,10 +451,12 @@ Hide
 Hide 
 	Rarity Normal Magic
 	Class == "Mana Flasks"
+		#BaseType == "Ultimate Mana Flask"
 	SetFontSize 18
 	SetBorderColor 0 0 0 0
 	SetBackgroundColor 20 20 0 0
 	DisableDropSound True
+
 Hide 
 	Rarity Normal Magic
 	Class == "Life Flasks"
@@ -454,11 +470,11 @@ Hide
 
 Hide 
 	Rarity Normal Magic
-	Class == "Rings" "Belts" "Body Armours" "Boots" "Gloves" "Helmets" "Bows" "Staves" "Quarterstaves" "Crossbows" "Traps" "Crossbows" "Claws" "Daggers" "Wands" "Sceptres" "Spears" "Flails" "Foci"
+	Class == "Amulets" "Rings" "Belts" "Body Armours" "Boots" "Gloves" "Helmets" "Bows" "Staves" "Quarterstaves" "Crossbows" "Traps" "Crossbows" "Claws" "Daggers" "Wands" "Sceptres" "Spears" "Flails" "Foci"
 	AreaLevel >= 65
 	SetFontSize 18
 	SetBorderColor 0 0 0 0
-	SetBackgroundColor Amulets20 20 0 0
+	SetBackgroundColor 20 20 0 0
 	DisableDropSound True
 
 #--------------------------
@@ -468,7 +484,7 @@ Hide
 Show
 BaseType "Uncut"
   ItemLevel >= 19
-  #ItemLevel <= 19
+  ItemLevel <= 19
 SetTextColor 20 240 240
 SetBorderColor 20 240 240
 PlayAlertSound 3 100
@@ -486,12 +502,13 @@ SetBorderColor 20 240 240
 
 Show
 BaseType "Uncut"
-ItemLevel = 20
+	ItemLevel >= 20
+	ItemLevel <= 20
   SetFontSize 45
   SetTextColor 255 0 0 255
   SetBorderColor 255 0 0 255
   SetBackgroundColor 255 255 255 255
-  PlayEffect Red
+  PlayEffect Blue
   MinimapIcon 0 Green Star
   PlayAlertSound 6 300
 
@@ -544,7 +561,7 @@ Hide
     Rarity <= Rare
     SetTextColor 255 255 255 255
     SetBackgroundColor 20 20 0 255
-    PlayAlertSound 4 300
+    #PlayAlertSound 4 300
     SetFontSize 40		
 	#PlayEffect Pink
 	#MinimapIcon 0 Pink Circle
@@ -601,7 +618,8 @@ PlayAlertSound 2 300
 
 Show 
 	Class == "Stackable Currency"
-	BaseType == "Lesser Jeweller's Orb" "Broken Circle Artifact" "Order Artifact" "Bronze Key" "Exotic Coinage" "Black Scythe Artifact" "Sun Artifact" "Orb of Transmutation" "Orb of Augmentation"
+	#BaseType == "Lesser Jeweller's Orb" "Broken Circle Artifact" "Order Artifact" "Bronze Key" "Exotic Coinage" "Black Scythe Artifact" "Sun Artifact" "Orb of Transmutation" "Orb of Augmentation"
+	BaseType == "Broken Circle Artifact" "Order Artifact" "Bronze Key" "Exotic Coinage" "Black Scythe Artifact" "Sun Artifact"
 	SetFontSize 41
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -609,6 +627,13 @@ Show
 	PlayEffect White
 	MinimapIcon 2 White Circle
 PlayAlertSound 2 300
+
+Hide 
+	Class == "Stackable Currency"
+	BaseType == "Lesser Jeweller's Orb" "Orb of Transmutation" "Orb of Augmentation"
+	SetFontSize 41
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
 
 Show 
 	Class == "Stackable Currency"
