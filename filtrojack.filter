@@ -4,10 +4,6 @@
 Hide 
 	Class == "Stackable Currency"
 	BaseType == "Orb of Augmentation" "Orb of Transmutation"
-	SetFontSize 45
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 255 255
-	SetBackgroundColor 240 90 35 255
 
 #------------------------------------
 # Bases
@@ -15,8 +11,8 @@ Hide
 
 Show 
 	Rarity Normal
-	Class == "Bows" "Wands" "Quarterstaves" "Crossbows" "Quivers"
-	BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Primed Quiver"
+	Class == "Bows" "Wands" "Quivers"
+	BaseType == "Attuned Wand" "Siphoning Wand" "Primed Quiver" "Expert Dualstring Bow"
 	AreaLevel >= 78
     SetTextColor 46 159 246 185
     SetBorderColor 46 159 246 255
@@ -28,7 +24,7 @@ Show
 Show 
 	Rarity Normal
 	Class == "Rings" "Belts" "Amulets"
-	BaseType == "Sapphire Ring" "Breach Ring" "Heavy Belt" "Gold Ring"
+	BaseType == "Sapphire Ring" "Breach Ring" "Heavy Belt"
 	AreaLevel >= 78
     SetTextColor 46 159 246 185
     SetBorderColor 46 159 246 255
@@ -140,7 +136,7 @@ Show
 Show 
 	Rarity Magic Rare
 	Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "Two Hand Axes" "Two Hand Maces" "Wands" "Quarterstaves" "Crossbows" "Spears" "Flails"
-	BaseType == "Expert Dualstring Bow" "Attuned Wand" "Siphoning Wand" "Chiming Staff" "Expert Slicing Quarterstaff" "Expert Bombard Crossbow"
+	BaseType == "Expert Dualstring Bow" "Attuned Wand" "Siphoning Wand" "Chiming Staff" "Expert Slicing Quarterstaff"
 	SetFontSize 30
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -286,7 +282,7 @@ Show
 Show 
 	Rarity Magic Rare
 	Class == "Body Armours"
-    BaseType == "Expert Waxed Jacket" "Expert Rogue Armour" "Expert Studded Vest" "Expert Wayfarer Jacket" "Expert Scalper's Jacket"
+    BaseType == "Expert Waxed Jacket" "Expert Rogue Armour" "Expert Studded Vest" "Expert Scalper's Jacket"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -615,18 +611,7 @@ Show
 
 Show 
 	Class == "Stackable Currency"
-	BaseType == "Sibilant Catalyst" 
-	SetFontSize 35
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 249 150 25 255
-	PlayEffect White
-	MinimapIcon 2 White Circle
-	PlayAlertSound 2 300
-
-Show 
-	Class == "Stackable Currency"
-	BaseType "Adaptive Catalyst" "Chayula's Catalyst" "Flesh Catalyst" "Reaver Catalyst" "Skittering Catalyst" "Uul-Netol's Catalyst" "Breach Splinter" "Carapace Catalyst" "Esh's Catalyst" "Neural Catalyst" "Tul's Catalyst" "Xoph's Catalyst"
+	BaseType "Adaptive Catalyst" "Chayula's Catalyst" "Reaver Catalyst" "Breach Splinter" "Esh's Catalyst" "Neural Catalyst" "Tul's Catalyst"
 	SetFontSize 45
 	SetTextColor 255 0 255 255
 	SetBorderColor 255 0 255 255
